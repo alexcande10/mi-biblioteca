@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Mi Biblioteca</h1>
+        <p>Sistema de gestión y visualización de libros</p>
+        <p>Autor: Alex Candelario León</p>
+    </header>
+
+    <section class="container">
+
+        <div class="formulario">
+            <h2>Registrar Libro</h2>
+
+            <input type="text" id="titulo" placeholder="Título del libro">
+            <input type="text" id="autor" placeholder="Autor">
+            <input type="number" id="anio" placeholder="Año de publicación">
+
+            <button onclick="agregarLibro()">Agregar Libro</button>
+        </div>
+
+        <div class="lista-libros">
+            <h2>Libros Registrados</h2>
+
+            <div id="contenedorLibros">
+                <!-- Aquí aparecerán los libros -->
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
